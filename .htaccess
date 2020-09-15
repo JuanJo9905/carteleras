@@ -1,0 +1,6 @@
+RewriteEngine On
+#Para evitar que siempre se redirija al index y que permita leer los estilos css se hacen unas exepciones
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA] #Es una regla para apache haciendo que siempre que se ingrese una url intente buscar primero el index

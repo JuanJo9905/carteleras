@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Cabecera*/
+#header{
+    background: black;
+    padding: 10px;
+}
+
+#header ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+#header ul li a{
+    border-color: seagreen;
+    border-style: dotted;
+    color: white;
+    text-decoration:none;
+    padding: 5px;
+}
+/*Titulo*/
+.center{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+/*Menu*/
+
+/*body*/
+.cartel{
+    display: inline-table;
+    height: 30%;
+    width: 30%;
+    background-color: hotpink;
+    
+}
+
+/*footer*/
+#footer{
+    background-color: #ccc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: inherit;
+    width: 100%;
+    }
+
+#footer p{
+    margin-left: 20px;
+}

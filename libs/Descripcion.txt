@@ -1,0 +1,13 @@
+* Los archivos con el nombre controller, model y views son simplemente las clases padres con las caracteristicas
+  necesarias para heredar y que sirvan como molde para no tener que escribir el mismo código en cada clase de un
+  controlador, vista o modelo.
+
+*La clase controller al ser la clase padre usa la clase view para usar su metodo render que recibe como parametro la
+ direccion que se le mande y busca el archivo en la carpeta views donde se encuentran todas las vistas, por lo tanto
+ todos los controladores hijo usan ésta caracteristica para mandar la direccion de su respectiva vista.
+
+*El archivo app es la clase más grande y es la que se encarga de leer la url para redireccionar a las vistas de 
+ los respectivos controladores según la informacion que se le suministre por la url.
+
+*El archivo database.php contiene toda la informacion para realizar la conexion a la base de datos haciendo uso de 
+ las constantes declaradas en el archivo config.php
