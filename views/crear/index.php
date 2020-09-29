@@ -9,6 +9,7 @@
 <body>
     <?php include_once 'views/layout/header.php' ?>
 
+    <article class="edicion">
     <h1 class="center">Crear cartelera</h1>
 
     <div class="center"><?php echo $this->mensaje;?></div>
@@ -20,7 +21,7 @@
     <input type="file" name="img" required><br><br>
     <input type="submit" value="Agregar cartel">
     </form>
-
+    </article>
     <?php include_once 'views/layout/footer.php' ?>
 </body>
 </html>

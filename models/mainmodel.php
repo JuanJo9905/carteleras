@@ -19,7 +19,7 @@ class MainModel extends Model
 
             while($row = $query->fetch()) //En $row voy guardando toda la informacion que traiga de la db
             {
-                $item = new Cartelera(); //Creo un objeto id
+                $item = new Cartelera(); //Creo un objeto Cartelera
                 $item->id          = $row['id'];
                 $item->titulo      = $row['titulo']; //En el atributo 'titulo' del objeto id guardo el contenido del espacio 'titulo' de la variable '$row'
                 $item->categoria   = $row['categoria'];
@@ -30,6 +30,30 @@ class MainModel extends Model
             }
             return $items;//Retorno el arreglo
 
+        }catch(PDOException $e)
+        {
+         return [];    
+        }
+    }
+
+    //Metodo para filtrar las peliculas segun su catgoria
+    public function getFiltro($categoria)
+    {
+        $items=[];
+        try{
+            $query = $this->db->connect()->query("SELECT * FROM carteleras where categoria like '%$categoria%'");
+            while($row = $query->fetch())
+            {
+                $item = new Cartelera();
+                $item->id          = $row['id'];
+                $item->titulo      = $row['titulo'];
+                $item->categoria   = $row['categoria'];
+                $item->sintaxis    = $row['sintaxis'];
+                $item->poster      = $row['poster'];
+
+                array_push($items, $item);  
+            }
+            return $items;
         }catch(PDOException $e)
         {
          return [];    

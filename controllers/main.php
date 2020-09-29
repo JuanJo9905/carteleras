@@ -13,6 +13,15 @@
             $this->view->carteleras = $carteleras;
             $this->view->render('main/index'); //Mando la direccion que quiero acceder como parametro para que la vista lo abra
         }
+        //Funcion para renderizar la pagina solo con las peliculas que cumplan con el filtro de categoria
+        function filtrar()
+        {
+            $categoria=$_POST['filtro'];
+            $carteleras=$this->model->getFiltro($categoria);
+            $this->view->carteleras = $carteleras;
+            $this->view->render('main/index');
+        }
+
 
         //Funcion para ver una cartelera según su id que se recibe del arreglo enviado desde app.php con todos los parametros recibidos
         function verCartel($param = null)

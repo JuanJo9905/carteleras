@@ -28,15 +28,51 @@
     text-align: center;
     
 }
-/*Menu*/
 
 /*body*/
+/*Backgrounds*/
+.titulo{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.edicion{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.carteleras{
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*Elementos*/
+
+.filtro{
+    margin-top: 2em;
+    margin-left: 2em;
+    text-align: center;
+}
 .cartel{
-    display: inline-table;
-    height: 30%;
-    width: 30%;
-    background-color: hotpink;
-    
+    background-color: #A39A92;
+    display: inline-block;
+    height: auto;
+    margin: 2em 4em 2em 4em;
+    width: 40%;
+}
+.cartel div{
+    width: 100%;
+}
+.cartel div img {
+    width: 100%;
+}
+
+.btn{
+    background-color:  #A39A92 ;
 }
 
 /*footer*/
