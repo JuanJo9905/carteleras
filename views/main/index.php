@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo constant('URL')?>views/public/css/layout.css">
+    <link rel="stylesheet" href="<?php echo constant('URL')?>views/public/css/carteleras.css">
     <title>Inicio</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
     <div class="carteleras">
 
         <!--Filtro de peliculas por categoria-->
-        <form action="<?php echo constant('URL').'main/'?>filtrar" method="post">
-        <input type="text" name="filtro" id="filtro">
+        <form action="<?php echo constant('URL').'main/'?>filtrar" method="post" class="filtro">
+        <input type="text" name="filtro" id="filtro" placeholder="Categoria">
         <input type="submit" value="Buscar">
-        <br>
+        <br><br>
         </form>
         
 
@@ -32,9 +33,10 @@
 
             <div id="imagen"><?php echo '<img src="'.$cartelera->poster.'" alt="'.$cartelera->poster.'">'; ?></div>
             <h1><?php echo $cartelera->titulo ?></h1> 
-            <p><?php echo $cartelera->sintaxis ?></p>
+            <p><?php echo $cartelera->sintaxis ?></p> 
             <p><?php echo $cartelera->categoria ?></p>
             <button class="btn"><a href="<?php echo constant('URL').'main/verCartel/'.$cartelera->id ?>">Editar</a></button>
+            <button class="btn_compra"><a href="<?php echo constant('URL').'main/comprarCartel/'.$cartelera->id ?>">Comprar</a></button>
             <button class="btn"><a href="<?php echo constant('URL').'main/eliminarCartel/'.$cartelera->id ?>">Eliminar</a></button>
 
         </div>

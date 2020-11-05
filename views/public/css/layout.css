@@ -26,7 +26,6 @@
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
-    
 }
 
 /*body*/
@@ -49,32 +48,6 @@
     background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-
-/*Elementos*/
-
-.filtro{
-    margin-top: 2em;
-    margin-left: 2em;
-    text-align: center;
-}
-.cartel{
-    background-color: #A39A92;
-    display: inline-block;
-    height: auto;
-    margin: 2em 4em 2em 4em;
-    width: 40%;
-}
-.cartel div{
-    width: 100%;
-}
-.cartel div img {
-    width: 100%;
-}
-
-.btn{
-    background-color:  #A39A92 ;
-}
-
 /*footer*/
 #footer{
     background-color: #ccc;

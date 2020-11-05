@@ -38,6 +38,17 @@
 
         }
 
+        //Funcion que muestra toda la info de un cartel para que se realize su compra
+        function comprarCartel($param = null)
+        {
+            $idCartel = $param[0];
+            $cartel = $this->model->getById($idCartel);
+            session_start();
+            $_SESSION['id_verCartel'] = $cartel->id;
+            $this->view->cartel = $cartel;
+            $this->view->render('main/comprar');
+        }
+
         //Funcion para editar la cartelera
         function editarCartelera()
         {

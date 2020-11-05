@@ -12,13 +12,13 @@
     
     <article class="edicion">
     <div id="main">
-    <h1 class="center">Detalle de '<?php echo $this->cartel->titulo; ?>' </h1>
+     <h1 class="center">Detalle de '<?php echo $this->cartel->titulo; ?>' </h1>
     
-    <div class="center"><?php echo $this->mensaje;?>
-    <form action="<?php echo constant('URL')?>main/editarCartelera" method="POST" enctype="multipart/form-data"> <!--Envio la info al controlador 'consulta' al metodo 'actualizarcartel'-->
+     <div class="center"><?php echo $this->mensaje;?>
+     <form action="<?php echo constant('URL')?>main/editarCartelera" method="POST" enctype="multipart/form-data"> <!--Envio la info al controlador 'consulta' al metodo 'actualizarcartel'-->
        
     
-    <p>
+        <p>
         <label for="id">ID</label><br>
         <input type="text" name="id" value="<?php echo $this->cartel->id; ?>" disabled>
         </p>
@@ -41,8 +41,8 @@
         <input type="file" name="img" required><br><br>
 
         <input type="submit" value="Actualizar cartel">
-    </form>
-    </div>
+     </form>
+     </div>
     </div>
     </article>
     <?php require_once 'views/layout/footer.php'?>

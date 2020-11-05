@@ -1,0 +1,23 @@
+.filtro{
+    margin: 0 0 2em 1em;
+    
+}
+.cartel{
+    background-color: #A39A92;
+    display: inline-block;
+    height: auto;
+    margin: 2em 4em 2em 4em;
+    width: 40%;
+}
+.cartel div{
+    height: 50%;
+    width: 100%;
+}
+.cartel div img {
+    height: 250px;
+    width: 100%;
+}
+
+.btn{
+    background-color:  #A39A92 ;
+}
