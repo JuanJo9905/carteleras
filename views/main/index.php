@@ -18,9 +18,8 @@
         <form action="<?php echo constant('URL').'main/'?>filtrar" method="post" class="filtro">
         <input type="text" name="filtro" id="filtro" placeholder="Categoria">
         <input type="submit" value="Buscar">
-        <br><br>
         </form>
-        
+        <br><br>
 
         <?php include_once 'models/cartelera.php';
         foreach($this->carteleras as $row)
@@ -33,11 +32,11 @@
 
             <div id="imagen"><?php echo '<img src="'.$cartelera->poster.'" alt="'.$cartelera->poster.'">'; ?></div>
             <h1><?php echo $cartelera->titulo ?></h1> 
-            <p><?php echo $cartelera->sintaxis ?></p> 
-            <p><?php echo $cartelera->categoria ?></p>
-            <button class="btn"><a href="<?php echo constant('URL').'main/verCartel/'.$cartelera->id ?>">Editar</a></button>
-            <button class="btn_compra"><a href="<?php echo constant('URL').'main/comprarCartel/'.$cartelera->id ?>">Comprar</a></button>
-            <button class="btn"><a href="<?php echo constant('URL').'main/eliminarCartel/'.$cartelera->id ?>">Eliminar</a></button>
+            <p class="sint"><?php echo $cartelera->sintaxis ?></p> 
+            <p class="cat"><?php echo $cartelera->categoria ?></p>
+            <button class="btn_compra"><a href="<?php echo constant('URL').'main/comprarCartel/'.$cartelera->id ?>"><img src="http://localhost/cursophp/cartelera/png/buy.png" alt="comprar"></a></button>
+            <button class="btn"><a href="<?php echo constant('URL').'main/eliminarCartel/'.$cartelera->id ?>"><img src="http://localhost/cursophp/cartelera/png/trash.png" alt="eliminar"></a></button>
+            <button class="btn"><a href="<?php echo constant('URL').'main/verCartel/'.$cartelera->id ?>"><img src="http://localhost/cursophp/cartelera/png/edit.png" alt="editar"></a></button>
 
         </div>
         

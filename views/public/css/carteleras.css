@@ -1,23 +1,56 @@
 .filtro{
-    margin: 0 0 2em 1em;
-    
+    position: absolute;
+    right: 5px;  
 }
+
 .cartel{
-    background-color: #A39A92;
+    background-color:white;
+    border-radius: 10px;
     display: inline-block;
     height: auto;
     margin: 2em 4em 2em 4em;
     width: 40%;
+
+}
+.cartel:hover{
+    box-shadow: 15px 15px 20px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
 }
 .cartel div{
     height: 50%;
     width: 100%;
 }
 .cartel div img {
+    border-radius: 10px 10px 0px 0px;
     height: 250px;
     width: 100%;
 }
-
-.btn{
-    background-color:  #A39A92 ;
+.cartel h1{
+    margin-left: 5px;
+}
+.cartel p{
+    margin-left: 5px;
+}
+.cartel .cat{
+    font-weight: bolder;
+}
+.cartel .btn{
+    float: right;
+    height: 30px;
+    margin-right: 5px;
+    width: 30px;
+}
+.cartel .btn img{
+    height: 100%;
+    width: 100%;
+}
+.cartel .btn_compra{
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+}
+.cartel .btn_compra img{
+    height: 100%;
+    width: 100%;
 }

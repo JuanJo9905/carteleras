@@ -2,26 +2,35 @@
     padding: 0;
     margin: 0;
 }
+
 /*Cabecera*/
-#header{
-    background: black;
+.header{
+    background: transparent;
+    height: 10%;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+}
+.header li{
+    background: #B2FF9E;
+    background: transparent;
+    box-shadow: 2px 2px 5px black inset, -2px -2px 5px black  inset;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    height: 80%;
+    margin-left: -4px;
     padding: 10px;
+    text-align: center;
+    width: 20%;
 }
-
-#header ul li{
-    list-style: none;
-    display: inline;
-    padding: 10px;
+.header li:hover{
+    box-shadow: 2px 2px 15px black inset, -2px -2px 15px black  inset;
+    background: #B2FF9E ;
+    -webkit-transition-duration: 0.5s;
 }
-
-#header ul li a{
-    border-color: seagreen;
-    border-style: dotted;
-    color: white;
-    text-decoration:none;
-    padding: 5px;
+.header li a:focus{
+    color: turquoise;
 }
-/*Titulo*/
 .center{
     padding-bottom: 30px;
     padding-top: 30px;
@@ -29,12 +38,13 @@
 }
 
 /*body*/
+
 /*Backgrounds*/
 .titulo{
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    color: white;
 }
 .edicion{
     background: #bdc3c7;  /* fallback for old browsers */
